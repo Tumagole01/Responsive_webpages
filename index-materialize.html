@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body style="background-image: url(/images/BCK\ 1.jpeg); background-size: cover;">
+   
+    
+    <main class="container">
+
+        <h1>materialize</h1>
+        
+        <div class="row">
+
+            <div class="col s12 m6">
+                <h1>{{data.user.fullName}}</h1>
+            </div>
+
+            <div class=" text-center col s12 m6">
+                <img src="{{data.user.photo}}" class="rounded col m8 " alt="...">
+              </div>
+        </div>
+        <br>
+        <br>
+        <hr>
+
+
+        <div class="row">
+            <h1>{{data.city.name}}</h1>
+            <div class="col s12 m6">
+                
+                 <img src="{{data.city.photo}}" class="rounded col m10" alt="...">
+
+            </div>
+            <div class="col s12 m6">
+                <p>
+                    {{data.city.description}}
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr>
+
+
+        <div>
+            <div>
+              <br>
+        
+                <h2>{{data.foreignLanguage.language}}</h2>
+                <br>
+                <br>
+                <hr>
+
+                <table class="table table-danger">
+                    <thead>
+                      <tr>
+                        <th scope="col">English Phrase</th>
+                        <th scope="col">Foreign Phrase</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                    {{#each data.foreignLanguage.phrases}}
+                    <tr>
+                        <td>{{englishPhrase}}</td>
+                        <td>{{foreignLanguage}}</td>
+                      </tr>
+                      {{/each}}
+                      
+                    </tbody>
+                  </table>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+
+
+
+        <br>
+        <div class="text-center">
+          <h2>{{data.course}}</h2>
+          <h3>{{data.institution}}</h3>
+          <hr>
+          <br>
+          <h2>favourite Subjects</h2>
+        </div>
+
+        <div class="row">
+          {{#each data.favouriteSubjects}}
+
+        <div class="col s12 m6">
+          <div class="card #e040fb purple accent-2">
+            <div class="card-content white-text">
+              <span class="card-title">{{name}}</span>
+              <p>{{description}}</p>
+            </div>
+           
+          </div>
+        </div>
+        {{/each}}
+      </div>
+
+        <br>
+       
+            
+
+    </main>
+
+</body>
+</html>

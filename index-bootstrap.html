@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body style="background-image: url(/images/BCK\ 1.jpeg); background-size: cover;">
+ <main class="container">
+
+
+    <div class="row mb-4" style="background-image: url(/images/BCK\ 1.jpeg); background-size: cover; margin: 1em">
+        <div class="col-md-6" >
+          <h1>{{data.user.fullName}}</h1>
+
+       </div>
+
+        <div class="col-md-5 text-center">
+            <img src="{{data.user.photo}}" class="rounded col-12" alt="...">
+        </div>
+    </div>
+
+ 
+ 
+ 
+ 
+ 
+  <div class="row text-bg-secondary">
+    <h2>{{data.city.name}}</h2>
+    <div class="col-md-6">
+            
+      <img src="{{data.city.photo}}" class="rounded col-md-12 " alt="...">
+    </div>
+
+        <div class="text-bg-secondary col-md-6" >
+          <p>{{data.city.description}}</p>
+        </div>
+
+    </div>
+
+
+    <div>
+        <h2>{{data.foreignLanguage.language}}</h2>
+        <table class="table table-success">
+            <thead>
+              <tr>
+                <th scope="col">English Phrase</th>
+                <th scope="col">Foreign Language</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              {{#each data.foreignLanguage.phrases}}
+              <tr>
+                <td>{{englishPhrase}}</td>
+                <td>{{foreignLanguage}}</td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        <div>
+
+        </div>
+        
+        <div class="text-center text-bg-secondary">
+          <h1>{{data.course}}</h1>           
+            <h2>{{data.Institution}}</h2>
+          </div> 
+        
+    </div>
+
+
+    <div class="row">
+<br>
+        {{#each data.favouriteSubjects}}
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 order border-primary">
+                <img src="{{photo}}" class="img-fluid rounded-start" alt="...">
+            </div>
+
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">{{name}}</h5>
+                  <p class="card-text">{{description}}</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+        <div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</main>
+</body>
+</html>

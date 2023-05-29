@@ -1,0 +1,47 @@
+{
+    "user" : {
+        "fullName": "Tumagole Tshepang Tlholwe",
+        "photo" : "/images/ME.jpeg"
+    },
+    "city" : {
+        "name" : "New York",
+        "photo" : "/images/NY.jpeg",
+        "description" : " It is one the largest cities in the world and I have always wanted to work there, as opportunities are not limited. New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park. Broadway theater is staged in neon-lit Times Square "
+    },
+    "foreignLanguage" : {
+        "language" : "French",
+        "phrases" : [{
+            "englishPhrase" : "French is the best",
+            "foreignLanguage" : "Le français est le meilleur"
+        },
+        {
+            "englishPhrase" : "I can speak a bit of French ",
+            "foreignLanguage" : "Je parle un peu français"
+        }
+    
+    ]
+    },
+    "school" : {
+        "course": "BCom Hons Information Management",
+        "Institution": "University of Johannesburg"
+    
+    },
+    
+    "favouriteSubjects" : [
+        {
+            "name" : "Knowledge Management",
+            "photo" : "/images/KNM.jpeg",
+            "description" : "it teaches me the basic fundementals of managing knowledge in organisation. Knowledge management is the process by which an enterprise gathers, organizes, shares and analyzes its knowledge in a way that is easily accessible to employees. This knowledge includes technical resources, frequently asked questions, training documents and people skills."
+        },
+        {
+            "name" : "Business Intelligence",
+            "photo" : "/images/BI Pic.jpeg.jpg",
+            "description" : "It talks about the strategies and technologies used by enterprises for the data analysis. Business intelligence (BI) refers to capabilities that enable organizations to make better decisions, take informed actions, and implement more-efficient business processes. BI capabilities allow you to. Collect up-to-date data from your organization."
+        },
+        {
+            "name" : "Competitive Intelligence",
+            "photo" : "/images/CI Pic.jpeg.jpg",
+            "description" : " it teaches you how to collect information that will put you ahead of your competition. Competitive intelligence, sometimes referred to as corporate intelligence, refers to the ability to gather, analyze, and use information collected on competitors, customers, and other market factors that contribute to a business's competitive advantage."
+        }
+    ]
+}
